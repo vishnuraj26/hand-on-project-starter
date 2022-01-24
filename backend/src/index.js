@@ -15,9 +15,9 @@ mongoose
   });
 
 app.get("/hello", (req, res) => {
-  res.send("hello there");
+  res.send();
 });
 
 app.listen(process.env.PORT, () => {
-  console.log("backend server runs at" + process.env.PORT);
+  console.log("backend server runs at " + process.env.PORT);
 });
