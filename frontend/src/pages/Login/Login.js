@@ -1,11 +1,52 @@
-import React  from "react";
+import React,{useState} from 'react'
+import axios from 'axios';
+import {useNavigate } from "react-router-dom"
+// import PropTypes from 'prop-types'
 import cuv_Logo from "./logo.png";
 import userLogo from "./adduserLogo.png"
 import styles from "./Login.module.css"
+import '../../components/Fonts/fonts.css'
 
 
 
-export default function Login(){
+export default function Login  (){
+
+    const navigate = useNavigate ()
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+
+
+    const loginHandler =async (e)=>{
+        e.preventDefault()
+
+            const config ={
+                headers:{
+                    "Content-type":"application/json"
+                }
+            }
+
+            try {
+            const {data} =await axios.post("http://localhost:5000/login",{
+                email,
+                password,
+            },config);
+
+            localStorage.setItem("token",JSON.stringify(data.token));
+            if (data.token!=undefined) {navigate('/dashboard'); window.location.reload();}
+
+
+        }
+         catch (error) {
+             if(error.response == undefined) return
+            alert(error.response.data.message)
+        }
+    }
+
+    const handleClick = ()=>{
+        navigate('/register')
+    }
 
         return (
                     <main role='main'>
@@ -39,25 +80,37 @@ export default function Login(){
                         </div>
 
                         <div className={styles.login_frame}>
-                            <div className={styles.entry}>
+                            <form className={styles.entry} action="#" autoComplete="off">
 
                                 <p> Login to your account</p>
                                 <input
                                     type='email'
+                                    name="email"
+                                    value={email}
+                                    onChange={(e)=> setEmail(e.target.value)}
                                     placeholder='Email address'
                                     /><br></br>
 
                                 <input
-                                 type='password'
-                                 placeholder ="Password"
-                                  /><br></br>
+                                    type='password'
+                                    name="password"
+                                    value={password}
+                                    onChange={(e)=>setPassword(e.target.value)}
+                                    placeholder ="Password"
+                                  />
 
                                 <button className={styles.login_button}
-                                onClick={()=>console.log('I was clicked')}
+                                    onClick={loginHandler}
                                 >
-                                    <p>Login/Signup</p>
+                                    <p>Login</p>
                                 </button>
-                            </div>
+                            </form>
+
+
+                            <span className={styles.alt}>
+                                Don&#x27;t have an account?Signup <a href="/register" onClick={handleClick}>here</a>
+                            </span>
+
 
                         </div>
 
@@ -65,3 +118,9 @@ export default function Login(){
 
                )
 }
+
+
+// Login.propTypes ={
+//     setToken: PropTypes.func.isRequired
+// }
+

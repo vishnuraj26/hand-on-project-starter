@@ -1,0 +1,189 @@
+.na {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  left: 0;
+  top: 0;
+  background: white;
+  box-shadow: 0px 1px whitesmoke;
+  overflow: hidden;
+}
+
+.na img {
+  position: absolute;
+  width: 120px;
+  height: 29.24px;
+  left: 40px;
+  top: 28px;
+}
+
+.panel {
+  position: absolute;
+  width: 717px;
+  height: 812px;
+  left: 0px;
+  top: 77px;
+
+  background: rgba(247, 248, 250, 0.5);
+}
+
+.info {
+  position: absolute;
+  width: 508px;
+  height: 555px;
+  left: 104px;
+  top: 160px;
+  overflow: hidden;
+}
+
+.info strong {
+  position: absolute;
+  width: 326px;
+  height: 124px;
+  left: 30px;
+  top: 10px;
+
+  font-family: DMSans-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: -0.02em;
+
+  /* primary text */
+
+  color: #1e272e;
+}
+
+.info p {
+  position: absolute;
+  width: 319px;
+  height: 36px;
+  left: 30px;
+  top: 140px;
+
+  font-family: DMSans-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+
+  /* secondary text */
+
+  color: #566474;
+}
+
+.info img {
+  position: absolute;
+  width: 480px;
+  height: 315px;
+  left: 0px;
+  top: 240px;
+}
+
+.api {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 456px;
+  left: 900px;
+  top: 210px;
+  background: #ffffff;
+  border: 1px solid #dfe0e0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.api img {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  left: 160px;
+  top: 62px;
+}
+
+.api p {
+  position: relative;
+  top: 70px;
+  left: 119px;
+  width: 200px;
+  height: 42px;
+
+  font-family: DMSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  /* secondary text */
+
+  color: #566474;
+}
+
+.api button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+
+  position: absolute;
+  width: 350px;
+  height: 44px;
+  left: 40px;
+  top: 350px;
+
+  background: #142683;
+  border-radius: 5px;
+}
+
+.api span {
+  position: static;
+  width: 102px;
+  height: 28px;
+  left: 112px;
+  top: 8px;
+
+  font-family: DMSans-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+  margin: 0px 8px;
+}
+
+.api small {
+  position: absolute;
+  width: 100px;
+  height: 28px;
+  left: 180px;
+  top: 400px;
+
+  font-family: DMSans-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+
+  letter-spacing: -0.02em;
+
+  color: #566474;
+}
+
+.recent {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  top: 300px;
+  left: 40%;
+  background-image: url("../../components/Logo/pngbackground.png");
+  background-size: cover;
+}

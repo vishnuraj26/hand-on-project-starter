@@ -1,0 +1,58 @@
+.cards {
+  display: flex;
+  position: relative;
+  width: 283px;
+  height: 320px;
+  left: 0px;
+  top: 0px;
+}
+.cards img {
+  position: absolute;
+  width: 283px;
+  height: 190px;
+  left: 0px;
+  top: 0px;
+}
+.cards span {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 0px;
+  top: 220px;
+
+  font-family: DMSans-Bold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  color: #1e272e;
+}
+.cards p {
+  position: absolute;
+  width: 291px;
+  height: 42px;
+  left: 0px;
+  top: 240px;
+
+  font-family: DMSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #566474;
+}
+
+@font-face {
+  font-family: "DMSans-Bold";
+  src: local("DMSans-Bold"),
+    url(E:/cuvette_project/hand-on-project-starter/frontend/src/components/Fonts/DMSans-Bold.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "DMSans-Regular";
+  src: local("DMSans-Regular"),
+    url(E:/cuvette_project/hand-on-project-starter/frontend/src/components/Fonts/DMSans-Regular.ttf)
+      format("truetype");
+}

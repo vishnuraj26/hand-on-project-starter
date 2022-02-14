@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "DMSans-Bold";
+  src: local("DMSans-Bold"),
+    url(E:/cuvette_project/hand-on-project-starter/frontend/src/components/Fonts/DMSans-Bold.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "DMSans-Regular";
+  src: local("DMSans-Regular"),
+    url(E:/cuvette_project/hand-on-project-starter/frontend/src/components/Fonts/DMSans-Regular.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: local("BebasNeue-Regular"),
+    url(E:\cuvette_project\hand-on-project-starter\frontend\src\components\Fonts\BebasNeue-Regular.ttf)
+      format("truetype");
+}
